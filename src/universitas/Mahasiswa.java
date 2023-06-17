@@ -1,28 +1,18 @@
 package universitas;
 
 
-public class Mahasiswa {
-    String npm;
-    String nama;
-    String prodi;
+public class MahasiswaBeraksi {
+    public static void main(String[] args){
+            
+    Mahasiswa mhs = new Mahasiswa("2110010150", " Teddy Kiswanto", " Teknik Informatika");
     
-        public String getNama(){
-       return nama;  
-   }
-    public String getNpm(){
-       return npm;  
-   }
-    public String getProdi(){
-       return prodi;  
-   }
     
-    public void setnama (String nama){
-       nama = nama;
-   }
-    
-    public void setnpm (String npm){
-       npm = npm;
-   }
-    
+        System.out.println("Nama: "+mhs.getNama());
+        System.out.println("NPM: "+mhs.getNpm());
+        System.out.println("Prodi: "+mhs.getProdi());
+        
+        System.out.println(mhs.setDetail());
 
+    
+}
 }
